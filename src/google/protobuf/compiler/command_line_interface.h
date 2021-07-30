@@ -160,11 +160,8 @@ class PROTOC_EXPORT CommandLineInterface {
   // as a virtual path.
   void SetInputsAreProtoPathRelative(bool /* enable */) {}
 
-  // Provides some text which will be printed when the --version flag is
-  // used.  The version of libprotoc will also be printed on the next line
-  // after this text.
+  // 设置版本信息
   void SetVersionInfo(const std::string& text) { version_info_ = text; }
-
 
  private:
   // -----------------------------------------------------------------

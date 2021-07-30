@@ -1,56 +1,24 @@
 Protocol Buffers - Google's data interchange format
 ===================================================
 
-Copyright 2008 Google Inc.
+官网/文档 ：https://developers.google.com/protocol-buffers/
 
-https://developers.google.com/protocol-buffers/
-
-Overview
+概述
 --------
 
-Protocol Buffers (a.k.a., protobuf) are Google's language-neutral,
-platform-neutral, extensible mechanism for serializing structured data. You
-can find [protobuf's documentation on the Google Developers site](https://developers.google.com/protocol-buffers/).
+包含 ：
+- `protoc` 编译器
+- 各个语言支持 `protobuf` 的 `库` 或 `运行时`
 
-This README file contains protobuf installation instructions. To install
-protobuf, you need to install the protocol compiler (used to compile .proto
-files) and the protobuf runtime for your chosen programming language.
-
-Protocol Compiler Installation
+安装
 ------------------------------
 
-The protocol compiler is written in C++. If you are using C++, please follow
-the [C++ Installation Instructions](src/README.md) to install protoc along
-with the C++ runtime.
+官方预编译好的:　[https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)
 
-For non-C++ users, the simplest way to install the protocol compiler is to
-download a pre-built binary from our release page:
-
-  [https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)
-
-In the downloads section of each release, you can find pre-built binaries in
-zip packages: protoc-$VERSION-$PLATFORM.zip. It contains the protoc binary
-as well as a set of standard .proto files distributed along with protobuf.
-
-If you are looking for an old version that is not available in the release
-page, check out the maven repo here:
-
-  [https://repo1.maven.org/maven2/com/google/protobuf/protoc/](https://repo1.maven.org/maven2/com/google/protobuf/protoc/)
-
-These pre-built binaries are only provided for released versions. If you want
-to use the github master version at HEAD, or you need to modify protobuf code,
-or you are using C++, it's recommended to build your own protoc binary from
-source.
-
-If you would like to build protoc binary from source, see the [C++ Installation
+自己编译参考： [C++ Installation
 Instructions](src/README.md).
 
-Protobuf Runtime Installation
------------------------------
-
-Protobuf supports several different programming languages. For each programming
-language, you can find instructions in the corresponding source directory about
-how to install protobuf runtime for that specific language:
+支持以下语言，它们的运行时包的安装如下：
 
 | Language                             | Source                                                      |
 |--------------------------------------|-------------------------------------------------------------|
@@ -65,21 +33,10 @@ how to install protobuf runtime for that specific language:
 | PHP                                  | [php](php)                                                  |
 | Dart                                 | [dart-lang/protobuf](https://github.com/dart-lang/protobuf) |
 
-Quick Start
+快速入门
 -----------
 
-The best way to learn how to use protobuf is to follow the tutorials in our
-developer guide:
+快速入门：https://developers.google.com/protocol-buffers/docs/tutorials
 
-https://developers.google.com/protocol-buffers/docs/tutorials
+案例代码：[examples](examples)
 
-If you want to learn from code examples, take a look at the examples in the
-[examples](examples) directory.
-
-Documentation
--------------
-
-The complete documentation for Protocol Buffers is available via the
-web at:
-
-https://developers.google.com/protocol-buffers/
